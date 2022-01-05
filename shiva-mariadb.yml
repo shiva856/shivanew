@@ -6,12 +6,4 @@
       yum :
         name : "{{item}}"
         state : latest
-      loop :
-        - mariadb
-        - mariadb-server
 
-    - name : run mariadb
-      service :
-        name : mariadb
-        state : started
-        enabled : yes
